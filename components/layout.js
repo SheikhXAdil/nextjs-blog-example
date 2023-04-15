@@ -29,26 +29,22 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={612}
-              width={612}
-              alt=""
+              src="/images/profile.jpg" // Route of the image file
+              height={144} // Desired size with correct aspect ratio
+              width={144} // Desired size with correct aspect ratio
+              alt="Your Name"
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
             <Link href="/">
-              {/* <Image
-                priority
-                src="images\profile.jpg"
-                className={utilStyles.borderCircle}
-                height={164}
-                width={164}
-                alt=""
-              /> */}
+              <Image
+                src="/images/profile.jpg" // Route of the image file
+                height={144} // Desired size with correct aspect ratio
+                width={144} // Desired size with correct aspect ratio
+                alt="Your Name"
+              />
             </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/" className={utilStyles.colorInherit}>
